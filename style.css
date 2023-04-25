@@ -1,0 +1,110 @@
+@charset "UTF-8";
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+:root {
+    --fontp: Arial, verdana, Helvetica, sans-serif;
+    --fontd: 'Sriracha', cursive;
+    --fonts: 'Passion One', cursive;
+    --fontb:  Verdana, Geneva, Tahoma, sans-serif;
+}
+ /* CABEÇALHO */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-width: 100%;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    color: white;
+    font-size: 10vh;
+    padding-top: 50px;
+    font: normal bolder 10vh var(--fonts);
+    font-variant: small-caps;
+    
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* CONTEUDO */
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section > p {
+    font: normal bolder 2em var(--fontd);
+    color: black;
+    padding: 25px;
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.img {
+    background-color: rgb(51, 51, 51);
+    color: black;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.527);
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.img > p {
+    display: inline-block;
+    font: normal bolder 2em var(--fontd);
+    background-color: rgba(0, 0, 0, 0.336);
+    text-shadow: 1px 1px 0px black;
+    color: white;
+    padding: 25px;
+
+
+}
+
+section.img#img1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+
+}
+
+section.img#img2 {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+
+}
+/* RODAPÉ */
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
